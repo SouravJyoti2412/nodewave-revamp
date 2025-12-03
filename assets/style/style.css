@@ -870,7 +870,8 @@ span {
 .how-it-works-section .section-title,
 .key-features-section .section-title,
 .tokenomics-section .section-title,
-.ecosystem-section .section-title {
+.ecosystem-section .section-title,
+.latest-news-and-articles-section .section-title {
     font-size: 3.8rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -919,7 +920,8 @@ span {
 .main-title .node,
 .key-benefits-section .benefits,
 .how-it-works-section .works,
-.key-features-section .section-title span {
+.key-features-section .section-title span,
+.latest-news-and-articles-section .section-title span {
     color: var(--custom-pink);
 }
 
@@ -959,7 +961,8 @@ span {
     .how-it-works-section .section-title,
     .key-features-section .section-title,
     .tokenomics-section .section-title,
-    .ecosystem-section .section-title {
+    .ecosystem-section .section-title,
+    .latest-news-and-articles-section .section-title {
         font-size: 5rem;
         padding-bottom: 2rem;
     }
@@ -996,7 +999,8 @@ span {
     .how-it-works-section .section-title,
     .key-features-section .section-title,
     .tokenomics-section .section-title,
-    .ecosystem-section .section-title {
+    .ecosystem-section .section-title,
+    .latest-news-and-articles-section .section-title {
         font-size: 6rem;
         padding-bottom: 3rem;
     }
@@ -1035,7 +1039,8 @@ span {
     .how-it-works-section .section-title,
     .key-features-section .section-title,
     .tokenomics-section .section-title,
-    .ecosystem-section .section-title {
+    .ecosystem-section .section-title,
+    .latest-news-and-articles-section .section-title {
         font-size: 7rem;
         padding-bottom: 3rem;
     }
