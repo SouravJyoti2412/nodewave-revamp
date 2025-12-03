@@ -1,1116 +1,932 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Nodewaves</title>
-        <link rel="icon" href="assets/images/favicon.svg" sizes="any" type="image/svg+xml" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="assets/style/style.css" />
-        <link rel="stylesheet" href="assets/style/slider.css" />
-    </head>
 
-    <body>
-        <div class="content-section">
-            <section class="MinWidth position-relative">
-                <header class="containerX Top-Header">
-                    <div class="row align-items-center justify-content-between">
-                        <div class="col-7 col-lg-2">
-                            <a class="d-inline-block" href="index"
-                                ><img src="assets/images/nodewaves-logo.png" alt="logo" class="img-fluid nav-logo"
-                            /></a>
-                        </div>
-                        <div class="col-1 col-lg-10 text-end">
-                            <nav class="Navbar">
-                                <ul class="nav-menu">
-                                    <li class="mob-nav-logo d-lg-none">
-                                        <a class="d-inline-block" href="index"
-                                            ><img src="assets/images/nodewaves-logo.png" alt="logo" class="img-fluid"
-                                        /></a>
-                                        <i class="ri-close-line close-nav">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                viewBox="0 0 24 24"
-                                                width="24"
-                                                height="24"
-                                            >
-                                                <path fill="none" d="M0 0h24v24H0z"></path>
-                                                <path
-                                                    fill="white"
-                                                    d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
-                                                ></path>
-                                            </svg>
-                                        </i>
-                                    </li>
-                                    <li class="nav-item nav-link-nav">
-                                        <a class="menu_item" href="index">Home</a>
-                                    </li>
-                                    <li class="nav-item nav-link-nav">
-                                        <a class="menu_item ecosystem" href="javascript:void(0);">Ecosystem</a>
-                                    </li>
-                                    <!-- <li class="nav-item nav-link-nav"><a class="menu_item node " href="javascript:void(0);">Node</a></li> -->
-                                    <li class="nav-item nav-link-nav">
-                                        <a class="menu_item token_clk" href="javascript:void(0);">Token</a>
-                                    </li>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nodewaves</title>
+    <link rel="icon" href="assets/images/favicon.svg" sizes="any" type="image/svg+xml" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/slider.css" />
+</head>
 
-                                    <li class="nav-item nav-link-nav dropdown">
-                                        <a class="menu_item">Products</a>
-                                    </li>
+<body>
+    <div class="content-section">
+        <section class="MinWidth position-relative">
+            <header class="containerX Top-Header">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-7 col-lg-2">
+                        <a class="d-inline-block" href="index"><img src="assets/images/nodewaves-logo.png" alt="logo"
+                                class="img-fluid nav-logo" /></a>
+                    </div>
+                    <div class="col-1 col-lg-10 text-end">
+                        <nav class="Navbar">
+                            <ul class="nav-menu">
+                                <li class="mob-nav-logo d-lg-none">
+                                    <a class="d-inline-block" href="index"><img src="assets/images/nodewaves-logo.png"
+                                            alt="logo" class="img-fluid" /></a>
+                                    <i class="ri-close-line close-nav">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                            height="24">
+                                            <path fill="none" d="M0 0h24v24H0z"></path>
+                                            <path fill="white"
+                                                d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z">
+                                            </path>
+                                        </svg>
+                                    </i>
+                                </li>
+                                <li class="nav-item nav-link-nav">
+                                    <a class="menu_item" href="index">Home</a>
+                                </li>
+                                <li class="nav-item nav-link-nav">
+                                    <a class="menu_item ecosystem" href="javascript:void(0);">Ecosystem</a>
+                                </li>
+                                <!-- <li class="nav-item nav-link-nav"><a class="menu_item node " href="javascript:void(0);">Node</a></li> -->
+                                <li class="nav-item nav-link-nav">
+                                    <a class="menu_item token_clk" href="javascript:void(0);">Token</a>
+                                </li>
 
-                                    <li class="nav-item nav-link-nav">
-                                        <a class="menu_item nws" href="javascript:void(0);">Get $NWS</a>
-                                    </li>
+                                <li class="nav-item nav-link-nav dropdown">
+                                    <a class="menu_item">Products</a>
+                                </li>
 
-                                    <!-- <li class="nav-item nav-link-nav"><a class="menu_item nws " href="swap-nws">NwsSwap</a></li>                            -->
-                                    <li class="nav-item nav-link-nav">
-                                        <a class="menu_item" href="https://stake.nodewaves.com" target="_blank"
-                                            >Stake</a
-                                        >
-                                    </li>
-                                    <w3m-core-button
-                                        class="wallet-connect"
-                                        style="float: inline-start; margin-left: 50px"
-                                        ><template shadowrootmode="open"
-                                            ><!----><w3m-connect-button
-                                                data-testid="partial-core-connect-button"
-                                                label="Connect Wallet"
-                                                ><template shadowrootmode="open"
-                                                    ><!----><w3m-button-big data-testid="partial-connect-button"
-                                                        ><template shadowrootmode="open"
-                                                            ><!----><button
-                                                                data-testid="component-big-button"
-                                                                class="  "
-                                                            >
-                                                                <slot></slot></button></template
-                                                        ><!--?lit$421597596$--><!--?lit$421597596$-->
+                                <li class="nav-item nav-link-nav">
+                                    <a class="menu_item nws" href="javascript:void(0);">Get $NWS</a>
+                                </li>
 
-                                                        <w3m-text
-                                                            variant="medium-regular"
-                                                            color="inverse"
-                                                            data-testid="partial-connect-text"
-                                                            ><template shadowrootmode="open"
-                                                                ><!----><span data-testid="component-text">
-                                                                    <slot class="w3m-medium-regular w3m-color-inverse">
-                                                                    </slot> </span></template
-                                                            ><!--?lit$421597596$-->Connect Wallet</w3m-text
-                                                        ></w3m-button-big
-                                                    ></template
-                                                ></w3m-connect-button
-                                            ></template
-                                        ></w3m-core-button
-                                    >
-                                </ul>
-                                <div class="hamburger p-0">
-                                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                                <!-- <li class="nav-item nav-link-nav"><a class="menu_item nws " href="swap-nws">NwsSwap</a></li>                            -->
+                                <li class="nav-item nav-link-nav">
+                                    <a class="menu_item" href="https://stake.nodewaves.com" target="_blank">Stake</a>
+                                </li>
+                                <w3m-core-button class="wallet-connect"
+                                    style="float: inline-start; margin-left: 50px"><template
+                                        shadowrootmode="open"><!----><w3m-connect-button
+                                            data-testid="partial-core-connect-button" label="Connect Wallet"><template
+                                                shadowrootmode="open"><!----><w3m-button-big
+                                                    data-testid="partial-connect-button"><template
+                                                        shadowrootmode="open"><!----><button
+                                                            data-testid="component-big-button" class="  ">
+                                                            <slot></slot>
+                                                        </button></template><!--?lit$421597596$--><!--?lit$421597596$-->
+
+                                                    <w3m-text variant="medium-regular" color="inverse"
+                                                        data-testid="partial-connect-text"><template
+                                                            shadowrootmode="open"><!----><span
+                                                                data-testid="component-text">
+                                                                <slot class="w3m-medium-regular w3m-color-inverse">
+                                                                </slot>
+                                                            </span></template><!--?lit$421597596$-->Connect
+                                                        Wallet</w3m-text></w3m-button-big></template></w3m-connect-button></template></w3m-core-button>
+                            </ul>
+                            <div class="hamburger p-0">
+                                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <!-- slider section start -->
+        <section class="slider-section position-relative">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- 1st hero slide -->
+                    <div class="active carousel-item position-relative">
+                        <div class="slider-content">
+                            <div
+                                class="main-content row mx-auto container ps-md-5 col-md-10 px-md-0 col-lg-9 col-xl-8 col-xxl-7">
+                                <div class="container-fluid">
+                                    <div class="d-md-flex align-baseline justify-content-around">
+                                        <div class="text-content text-center col-md-8 col-xl-10">
+                                            <!-- heading start -->
+                                            <div class="heading col-10 col-md-10">
+                                                <h1 class="text-start lh-1">
+                                                    <p><span>NODE</span>WAVES</p>
+                                                    <p>NEW ERA</p>
+                                                    <p>OF MINING</p>
+                                                </h1>
+                                            </div>
+                                            <div
+                                                class="des-and-button text-start d-md-flex flex-md-row-reverse justify-content-md-end align-items-center col-lg-10">
+                                                <div
+                                                    class="text-div col-10 py-4 p-md-0 lh-sm col-md-6 col-lg-7 col-xl-6">
+                                                    <p class="des-text text-start m-0 ps-md-5">
+                                                        Mining NWS tokens with Founder Node and Lite node
+                                                    </p>
+                                                </div>
+
+                                                <div class="btn-div col-6 col-md-4 col-lg-5 col-xl-4">
+                                                    <a href="#"
+                                                        class="btn text-white rounded-pill border-0 px-3 py-3 w-100">
+                                                        CONNECT WALLET
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="position-relative coin-stand text-center col-md-4 col-xl-5 col-xxl-5">
+                                            <div class="coin-img-container-div">
+                                                <img src="assets/images/coin-mobile.png" alt="NodeWaves Coin"
+                                                    class="coin-image-for-mobile coin-image img-fluid col-9 d-md-none" />
+                                                <img src="assets/images/coin.png" alt="NodeWaves Coin"
+                                                    class="coin-image coin-image img-fluid d-none d-md-block col-md-12" />
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </nav>
+                                <!-- slide indicator start -->
+                                <div class="slide-indicator container-fluid text-white text-start col-12 px-4 pb-2">
+                                    <h1><span>1</span>/4</h1>
+                                </div>
+                                <!-- slide indicator end -->
+                            </div>
+                            <!-- background image start -->
+                            <div class="slider-bg-img-container-div">
+                                <img class="slider-bg-1 slider-bg-img position-absolute col-md-12"
+                                    src="assets/images/slider-bg-1.png" alt=" slider bg 1" />
+                            </div>
+                            <!-- background image start -->
                         </div>
                     </div>
-                </header>
-            </section>
-            <!-- slider section start -->
-            <section class="slider-section position-relative">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <!-- 1st hero slide -->
-                        <div class="active carousel-item position-relative">
-                            <div class="slider-content">
-                                <div
-                                    class="main-content row mx-auto container ps-md-5 col-md-10 px-md-0 col-lg-9 col-xl-8 col-xxl-7"
-                                >
-                                    <div class="container-fluid">
-                                        <div class="d-md-flex align-baseline justify-content-around">
-                                            <div class="text-content text-center col-md-8 col-xl-10">
-                                                <!-- heading start -->
-                                                <div class="heading col-10 col-md-10">
-                                                    <h1 class="text-start lh-1">
-                                                        <p><span>NODE</span>WAVES</p>
-                                                        <p>NEW ERA</p>
-                                                        <p>OF MINING</p>
-                                                    </h1>
-                                                </div>
-                                                <div
-                                                    class="des-and-button text-start d-md-flex flex-md-row-reverse justify-content-md-end align-items-center col-lg-10"
-                                                >
-                                                    <div
-                                                        class="text-div col-10 py-4 p-md-0 lh-sm col-md-6 col-lg-7 col-xl-6"
-                                                    >
-                                                        <p class="des-text text-start m-0 ps-md-5">
-                                                            Mining NWS tokens with Founder Node and Lite node
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="btn-div col-6 col-md-4 col-lg-5 col-xl-4">
-                                                        <a
-                                                            href="#"
-                                                            class="btn text-white rounded-pill border-0 px-3 py-3 w-100"
-                                                        >
-                                                            CONNECT WALLET
-                                                        </a>
-                                                    </div>
-                                                </div>
+                    <!-- 2nd hero slide -->
+                    <div class="your-first-step-slide carousel-item position-relative">
+                        <div class="slider-content">
+                            <div
+                                class="main-content row mx-auto container ps-md-5 col-md-10 px-md-0 col-lg-9 col-xl-8 col-xxl-7">
+                                <div class="container-fluid">
+                                    <div class="d-md-flex align-baseline justify-content-around">
+                                        <div class="text-content text-center col-md-8 col-xl-10">
+                                            <!-- heading start -->
+                                            <div class="heading col-12 col-md-12">
+                                                <h1 class="text-start lh-1">
+                                                    <p>Your</p>
+                                                    <p><span>first step</span></p>
+                                                    <p>Lite Node</p>
+                                                </h1>
                                             </div>
-
                                             <div
-                                                class="position-relative coin-stand text-center col-md-4 col-xl-5 col-xxl-5"
-                                            >
-                                                <div class="coin-img-container-div">
-                                                    <img
-                                                        src="assets/images/coin-mobile.png"
-                                                        alt="NodeWaves Coin"
-                                                        class="coin-image-for-mobile coin-image img-fluid col-9 d-md-none"
-                                                    />
-                                                    <img
-                                                        src="assets/images/coin.png"
-                                                        alt="NodeWaves Coin"
-                                                        class="coin-image coin-image img-fluid d-none d-md-block col-md-12"
-                                                    />
+                                                class="des-and-button text-start d-md-flex flex-md-row-reverse justify-content-md-end align-items-center col-lg-10">
+                                                <div
+                                                    class="text-div col-10 py-4 p-md-0 lh-sm col-md-6 col-lg-7 col-xl-6">
+                                                    <p class="des-text text-start m-0 ps-md-5">
+                                                        Unlock passive income effortlessly with Light Node mining -
+                                                        start earning from just $200
+                                                    </p>
+                                                </div>
+
+                                                <div class="btn-div col-6 col-md-4 col-lg-5 col-xl-4">
+                                                    <a href="#"
+                                                        class="btn text-white rounded-pill border-0 px-3 py-3 w-100">
+                                                        CONNECT WALLET
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div
+                                            class="position-relative coin-stand text-center col-md-4 col-xl-5 col-xxl-5">
+                                            <div class="coin-img-container-div">
+                                                <img src="assets/images/coin-mobile.png" alt="NodeWaves Coin"
+                                                    class="coin-image-for-mobile coin-image img-fluid col-9 d-md-none" />
+                                                <img src="assets/images/coin.png" alt="NodeWaves Coin"
+                                                    class="coin-image coin-image img-fluid d-none d-md-block col-md-12" />
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!-- slide indicator start -->
-                                    <div class="slide-indicator container-fluid text-white text-start col-12 px-4 pb-2">
-                                        <h1><span>1</span>/4</h1>
-                                    </div>
-                                    <!-- slide indicator end -->
                                 </div>
-                                <!-- background image start -->
-                                <div class="slider-bg-img-container-div">
-                                    <img
-                                        class="slider-bg-1 slider-bg-img position-absolute col-md-12"
-                                        src="assets/images/slider-bg-1.png"
-                                        alt=" slider bg 1"
-                                    />
+                                <!-- slide indicator start -->
+                                <div class="slide-indicator container-fluid text-white text-start col-12 px-4 pb-2">
+                                    <h1><span>2</span>/4</h1>
                                 </div>
-                                <!-- background image start -->
+                                <!-- slide indicator end -->
                             </div>
+                            <!-- background image start -->
+                            <div class="slider-bg-img-container-div">
+                                <img class="slider-bg-2 slider-bg-img position-absolute col-md-12"
+                                    src="assets/images/slider-bg-2.png" alt=" slider bg 2" />
+                            </div>
+                            <!-- background image end -->
                         </div>
-                        <!-- 2nd hero slide -->
-                        <div class="your-first-step-slide carousel-item position-relative">
-                            <div class="slider-content">
-                                <div
-                                    class="main-content row mx-auto container ps-md-5 col-md-10 px-md-0 col-lg-9 col-xl-8 col-xxl-7"
-                                >
-                                    <div class="container-fluid">
-                                        <div class="d-md-flex align-baseline justify-content-around">
-                                            <div class="text-content text-center col-md-8 col-xl-10">
-                                                <!-- heading start -->
-                                                <div class="heading col-12 col-md-12">
-                                                    <h1 class="text-start lh-1">
-                                                        <p>Your</p>
-                                                        <p><span>first step</span></p>
-                                                        <p>Lite Node</p>
-                                                    </h1>
-                                                </div>
-                                                <div
-                                                    class="des-and-button text-start d-md-flex flex-md-row-reverse justify-content-md-end align-items-center col-lg-10"
-                                                >
-                                                    <div
-                                                        class="text-div col-10 py-4 p-md-0 lh-sm col-md-6 col-lg-7 col-xl-6"
-                                                    >
-                                                        <p class="des-text text-start m-0 ps-md-5">
-                                                            Unlock passive income effortlessly with Light Node mining -
-                                                            start earning from just $200
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="btn-div col-6 col-md-4 col-lg-5 col-xl-4">
-                                                        <a
-                                                            href="#"
-                                                            class="btn text-white rounded-pill border-0 px-3 py-3 w-100"
-                                                        >
-                                                            CONNECT WALLET
-                                                        </a>
-                                                    </div>
-                                                </div>
+                    </div>
+                    <!-- 3rd hero slide -->
+                    <div class="join-the-dao-slide carousel-item position-relative">
+                        <div class="slider-content">
+                            <div
+                                class="main-content row mx-auto container ps-md-5 col-md-10 px-md-0 col-lg-9 col-xl-8 col-xxl-7">
+                                <div class="container-fluid">
+                                    <div class="d-md-flex align-baseline justify-content-around">
+                                        <div class="text-content text-center col-md-8 col-xl-10">
+                                            <!-- heading start -->
+                                            <div class="heading col-12 col-md-12">
+                                                <h1 class="text-start lh-1">
+                                                    <p>Join the</p>
+                                                    <p>DAO</p>
+                                                    <p>NWS Node</p>
+                                                </h1>
                                             </div>
-
+                                            <div class="floating-coin-img position-relative d-none d-lg-block">
+                                                <img class="position-absolute" src="assets/images/floating-coin.png"
+                                                    alt="coin img" />
+                                            </div>
                                             <div
-                                                class="position-relative coin-stand text-center col-md-4 col-xl-5 col-xxl-5"
-                                            >
-                                                <div class="coin-img-container-div">
-                                                    <img
-                                                        src="assets/images/coin-mobile.png"
-                                                        alt="NodeWaves Coin"
-                                                        class="coin-image-for-mobile coin-image img-fluid col-9 d-md-none"
-                                                    />
-                                                    <img
-                                                        src="assets/images/coin.png"
-                                                        alt="NodeWaves Coin"
-                                                        class="coin-image coin-image img-fluid d-none d-md-block col-md-12"
-                                                    />
+                                                class="des-and-button text-start d-md-flex flex-md-row-reverse justify-content-md-end align-items-center col-lg-10">
+                                                <div
+                                                    class="text-div col-10 py-4 p-md-0 lh-sm col-md-6 col-lg-7 col-xl-6">
+                                                    <p class="des-text text-start m-0 ps-md-5">
+                                                        Earn from mining, engage with the community, and shape its
+                                                        future through voting!
+                                                    </p>
+                                                </div>
+
+                                                <div class="btn-div col-6 col-md-4 col-lg-5 col-xl-4">
+                                                    <a href="#"
+                                                        class="btn text-white rounded-pill border-0 px-3 py-3 w-100">
+                                                        CONNECT WALLET
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div
+                                            class="position-relative coin-stand text-center col-md-4 col-xl-5 col-xxl-5">
+                                            <div class="coin-img-container-div invisible">
+                                                <img src="assets/images/coin-mobile.png" alt="NodeWaves Coin"
+                                                    class="coin-image-for-mobile coin-image img-fluid col-9 d-md-none" />
+                                                <img src="assets/images/coin.png" alt="NodeWaves Coin"
+                                                    class="coin-image coin-image img-fluid d-none d-md-block col-md-12" />
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!-- slide indicator start -->
-                                    <div class="slide-indicator container-fluid text-white text-start col-12 px-4 pb-2">
-                                        <h1><span>2</span>/4</h1>
-                                    </div>
-                                    <!-- slide indicator end -->
                                 </div>
-                                <!-- background image start -->
-                                <div class="slider-bg-img-container-div">
-                                    <img
-                                        class="slider-bg-2 slider-bg-img position-absolute col-md-12"
-                                        src="assets/images/slider-bg-2.png"
-                                        alt=" slider bg 2"
-                                    />
+                                <!-- slide indicator start -->
+                                <div class="slide-indicator container-fluid text-white text-start col-12 px-4 pb-2">
+                                    <h1><span>3</span>/4</h1>
                                 </div>
-                                <!-- background image end -->
+                                <!-- slide indicator end -->
                             </div>
+                            <!-- background image start -->
+                            <div class="slider-bg-img-container-div">
+                                <img class="slider-bg-3 slider-bg-img position-absolute col-md-12"
+                                    src="assets/images/slider-bg-3.png" alt=" slider bg 3" />
+                            </div>
+                            <!-- background image start -->
                         </div>
-                        <!-- 3rd hero slide -->
-                        <div class="join-the-dao-slide carousel-item position-relative">
-                            <div class="slider-content">
-                                <div
-                                    class="main-content row mx-auto container ps-md-5 col-md-10 px-md-0 col-lg-9 col-xl-8 col-xxl-7"
-                                >
-                                    <div class="container-fluid">
-                                        <div class="d-md-flex align-baseline justify-content-around">
-                                            <div class="text-content text-center col-md-8 col-xl-10">
-                                                <!-- heading start -->
-                                                <div class="heading col-12 col-md-12">
-                                                    <h1 class="text-start lh-1">
-                                                        <p>Join the</p>
-                                                        <p>DAO</p>
-                                                        <p>NWS Node</p>
-                                                    </h1>
-                                                </div>
-                                                <div class="floating-coin-img position-relative d-none d-lg-block">
-                                                    <img
-                                                        class="position-absolute"
-                                                        src="assets/images/floating-coin.png"
-                                                        alt="coin img"
-                                                    />
-                                                </div>
-                                                <div
-                                                    class="des-and-button text-start d-md-flex flex-md-row-reverse justify-content-md-end align-items-center col-lg-10"
-                                                >
-                                                    <div
-                                                        class="text-div col-10 py-4 p-md-0 lh-sm col-md-6 col-lg-7 col-xl-6"
-                                                    >
-                                                        <p class="des-text text-start m-0 ps-md-5">
-                                                            Earn from mining, engage with the community, and shape its
-                                                            future through voting!
-                                                        </p>
-                                                    </div>
-
-                                                    <div class="btn-div col-6 col-md-4 col-lg-5 col-xl-4">
-                                                        <a
-                                                            href="#"
-                                                            class="btn text-white rounded-pill border-0 px-3 py-3 w-100"
-                                                        >
-                                                            CONNECT WALLET
-                                                        </a>
-                                                    </div>
-                                                </div>
+                    </div>
+                    <!-- 4th hero slide -->
+                    <div class="marketplace-coming-soon-slider carousel-item position-relative">
+                        <div class="slider-content">
+                            <div
+                                class="main-content row mx-auto container ps-md-5 col-md-10 px-md-0 col-lg-9 col-xl-8 col-xxl-7">
+                                <div class="container-fluid">
+                                    <div class="d-md-flex align-baseline justify-content-around">
+                                        <div class="text-content text-center col-md-8 col-xl-10">
+                                            <!-- heading start -->
+                                            <div class="heading col-10 col-md-10">
+                                                <h1 class="text-start lh-1">
+                                                    <p>Marketplace</p>
+                                                    <p>Coming</p>
+                                                    <p>Soon</p>
+                                                </h1>
                                             </div>
                                             <div
-                                                class="position-relative coin-stand text-center col-md-4 col-xl-5 col-xxl-5"
-                                            >
-                                                <div class="coin-img-container-div invisible">
-                                                    <img
-                                                        src="assets/images/coin-mobile.png"
-                                                        alt="NodeWaves Coin"
-                                                        class="coin-image-for-mobile coin-image img-fluid col-9 d-md-none"
-                                                    />
-                                                    <img
-                                                        src="assets/images/coin.png"
-                                                        alt="NodeWaves Coin"
-                                                        class="coin-image coin-image img-fluid d-none d-md-block col-md-12"
-                                                    />
+                                                class="des-and-button text-start d-md-flex flex-md-row-reverse justify-content-md-end align-items-center col-lg-10">
+                                                <div
+                                                    class="text-div col-10 py-4 p-md-0 lh-sm col-md-6 col-lg-7 col-xl-6">
+                                                    <p class="des-text text-start m-0 ps-md-5">
+                                                        Transform your Node into an NFT - easily sell, trade, or
+                                                        gift it to friends and start profiting today!
+                                                    </p>
+                                                </div>
+
+                                                <div class="btn-div col-6 col-md-4 col-lg-5 col-xl-4">
+                                                    <a href="#"
+                                                        class="btn text-white rounded-pill border-0 px-3 py-3 w-100">
+                                                        CONNECT WALLET
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- slide indicator start -->
-                                    <div class="slide-indicator container-fluid text-white text-start col-12 px-4 pb-2">
-                                        <h1><span>3</span>/4</h1>
-                                    </div>
-                                    <!-- slide indicator end -->
-                                </div>
-                                <!-- background image start -->
-                                <div class="slider-bg-img-container-div">
-                                    <img
-                                        class="slider-bg-3 slider-bg-img position-absolute col-md-12"
-                                        src="assets/images/slider-bg-3.png"
-                                        alt=" slider bg 3"
-                                    />
-                                </div>
-                                <!-- background image start -->
-                            </div>
-                        </div>
-                        <!-- 4th hero slide -->
-                        <div class="marketplace-coming-soon-slider carousel-item position-relative">
-                            <div class="slider-content">
-                                <div
-                                    class="main-content row mx-auto container ps-md-5 col-md-10 px-md-0 col-lg-9 col-xl-8 col-xxl-7"
-                                >
-                                    <div class="container-fluid">
-                                        <div class="d-md-flex align-baseline justify-content-around">
-                                            <div class="text-content text-center col-md-8 col-xl-10">
-                                                <!-- heading start -->
-                                                <div class="heading col-10 col-md-10">
-                                                    <h1 class="text-start lh-1">
-                                                        <p>Marketplace</p>
-                                                        <p>Coming</p>
-                                                        <p>Soon</p>
-                                                    </h1>
-                                                </div>
-                                                <div
-                                                    class="des-and-button text-start d-md-flex flex-md-row-reverse justify-content-md-end align-items-center col-lg-10"
-                                                >
-                                                    <div
-                                                        class="text-div col-10 py-4 p-md-0 lh-sm col-md-6 col-lg-7 col-xl-6"
-                                                    >
-                                                        <p class="des-text text-start m-0 ps-md-5">
-                                                            Transform your Node into an NFT - easily sell, trade, or
-                                                            gift it to friends and start profiting today!
-                                                        </p>
-                                                    </div>
 
-                                                    <div class="btn-div col-6 col-md-4 col-lg-5 col-xl-4">
-                                                        <a
-                                                            href="#"
-                                                            class="btn text-white rounded-pill border-0 px-3 py-3 w-100"
-                                                        >
-                                                            CONNECT WALLET
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div
-                                                class="position-relative coin-stand text-center col-md-4 col-xl-5 col-xxl-5"
-                                            >
-                                                <div class="coin-img-container-div invisible">
-                                                    <img
-                                                        src="assets/images/coin-mobile.png"
-                                                        alt="NodeWaves Coin"
-                                                        class="coin-image-for-mobile coin-image img-fluid col-9 d-md-none"
-                                                    />
-                                                    <img
-                                                        src="assets/images/coin.png"
-                                                        alt="NodeWaves Coin"
-                                                        class="coin-image coin-image img-fluid d-none d-md-block col-md-12"
-                                                    />
-                                                </div>
+                                        <div
+                                            class="position-relative coin-stand text-center col-md-4 col-xl-5 col-xxl-5">
+                                            <div class="coin-img-container-div invisible">
+                                                <img src="assets/images/coin-mobile.png" alt="NodeWaves Coin"
+                                                    class="coin-image-for-mobile coin-image img-fluid col-9 d-md-none" />
+                                                <img src="assets/images/coin.png" alt="NodeWaves Coin"
+                                                    class="coin-image coin-image img-fluid d-none d-md-block col-md-12" />
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- slide indicator start -->
-                                    <div class="slide-indicator container-fluid text-white text-start col-12 px-4 pb-2">
-                                        <h1><span>4</span>/4</h1>
-                                    </div>
-                                    <!-- slide indicator end -->
                                 </div>
-                                <!-- background image start -->
-                                <div class="slider-bg-img-container-div">
-                                    <img
-                                        class="slider-bg-4 slider-bg-img position-absolute col-md-12"
-                                        src="assets/images/slider-bg-4.png"
-                                        alt=" slider bg 4"
-                                    />
+                                <!-- slide indicator start -->
+                                <div class="slide-indicator container-fluid text-white text-start col-12 px-4 pb-2">
+                                    <h1><span>4</span>/4</h1>
                                 </div>
-                                <!-- background image start -->
+                                <!-- slide indicator end -->
                             </div>
+                            <!-- background image start -->
+                            <div class="slider-bg-img-container-div">
+                                <img class="slider-bg-4 slider-bg-img position-absolute col-md-12"
+                                    src="assets/images/slider-bg-4.png" alt=" slider bg 4" />
+                            </div>
+                            <!-- background image start -->
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- slider section end -->
-            <!-- infinite brand logo section start -->
-            <section>
-                <div class="container-fluid p-0">
-                    <div class="slider-container">
-                        <div class="slider-track">
-                            <!-- First set of brands -->
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider/iskra.png"
-                                    alt="ISKRA"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider/bit-go.png"
-                                    alt="BitGo"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider/lfg.png"
-                                    alt="LFG"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider//cryptomind.png"
-                                    alt="cryptomind"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider/de-pin.png"
-                                    alt="DePIN X"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider/yellow.png"
-                                    alt="yelløw"
-                                    class="brand-logo-img"
-                                />
-                            </div>
+            </div>
+        </section>
+        <!-- slider section end -->
+        <!-- infinite brand logo section start -->
+        <section>
+            <div class="container-fluid p-0">
+                <div class="slider-container">
+                    <div class="slider-track">
+                        <!-- First set of brands -->
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider/iskra.png" alt="ISKRA"
+                                class="brand-logo-img" />
+                        </div>
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider/bit-go.png" alt="BitGo"
+                                class="brand-logo-img" />
+                        </div>
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider/lfg.png" alt="LFG" class="brand-logo-img" />
+                        </div>
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider//cryptomind.png" alt="cryptomind"
+                                class="brand-logo-img" />
+                        </div>
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider/de-pin.png" alt="DePIN X"
+                                class="brand-logo-img" />
+                        </div>
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider/yellow.png" alt="yelløw"
+                                class="brand-logo-img" />
+                        </div>
 
-                            <!-- Duplicate set for seamless loop -->
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider/iskra.png"
-                                    alt="ISKRA"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider/bit-go.png"
-                                    alt="BitGo"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider/lfg.png"
-                                    alt="LFG"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider//cryptomind.png"
-                                    alt="cryptomind"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider/de-pin.png"
-                                    alt="DePIN X"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider/yellow.png"
-                                    alt="yelløw"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <!-- Duplicate set for seamless loop -->
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider/iskra.png"
-                                    alt="ISKRA"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider/bit-go.png"
-                                    alt="BitGo"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider/lfg.png"
-                                    alt="LFG"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider//cryptomind.png"
-                                    alt="cryptomind"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider/de-pin.png"
-                                    alt="DePIN X"
-                                    class="brand-logo-img"
-                                />
-                            </div>
-                            <div class="brand-item">
-                                <img
-                                    src="assets/images/infinite-brand-slider/yellow.png"
-                                    alt="yelløw"
-                                    class="brand-logo-img"
-                                />
-                            </div>
+                        <!-- Duplicate set for seamless loop -->
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider/iskra.png" alt="ISKRA"
+                                class="brand-logo-img" />
+                        </div>
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider/bit-go.png" alt="BitGo"
+                                class="brand-logo-img" />
+                        </div>
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider/lfg.png" alt="LFG" class="brand-logo-img" />
+                        </div>
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider//cryptomind.png" alt="cryptomind"
+                                class="brand-logo-img" />
+                        </div>
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider/de-pin.png" alt="DePIN X"
+                                class="brand-logo-img" />
+                        </div>
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider/yellow.png" alt="yelløw"
+                                class="brand-logo-img" />
+                        </div>
+                        <!-- Duplicate set for seamless loop -->
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider/iskra.png" alt="ISKRA"
+                                class="brand-logo-img" />
+                        </div>
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider/bit-go.png" alt="BitGo"
+                                class="brand-logo-img" />
+                        </div>
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider/lfg.png" alt="LFG" class="brand-logo-img" />
+                        </div>
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider//cryptomind.png" alt="cryptomind"
+                                class="brand-logo-img" />
+                        </div>
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider/de-pin.png" alt="DePIN X"
+                                class="brand-logo-img" />
+                        </div>
+                        <div class="brand-item">
+                            <img src="assets/images/infinite-brand-slider/yellow.png" alt="yelløw"
+                                class="brand-logo-img" />
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- infinite brand logo section end -->
+            </div>
+        </section>
+        <!-- infinite brand logo section end -->
 
-            <!-- analytics sectioin start  -->
-            <section class="analytics-section">
-                <div class="mexc container my-5">
-                    <div class="col-11 mx-auto my-5">
-                        <div
-                            class="heading-div d-flex justify-content-between align-items-center my-5 mx-auto col-12 col-md-6"
-                        >
-                            <div class=" ">
-                                <img
-                                    class="img-fluid w-100"
-                                    src="assets/images/nodewavers-logo-small.png"
-                                    alt="nedodeode-wavers-logo"
-                                />
-                            </div>
-                            <div class="text-white ps-5 ps-md-0 text-md-center">
-                                <span>is in</span>
-                            </div>
-
-                            <div class="text-md-start text-end">
-                                <img
-                                    class="img-fluid w-75"
-                                    src="assets/images/mexc-logo.png"
-                                    alt="nedodeode-wavers-logo"
-                                />
-                            </div>
+        <!-- analytics sectioin start  -->
+        <section class="analytics-section">
+            <div class="mexc container my-5">
+                <div class="col-11 mx-auto my-5">
+                    <div
+                        class="heading-div d-flex justify-content-between align-items-center my-5 mx-auto col-12 col-md-6">
+                        <div class=" ">
+                            <img class="img-fluid w-100" src="assets/images/nodewavers-logo-small.png"
+                                alt="nedodeode-wavers-logo" />
+                        </div>
+                        <div class="text-white ps-5 ps-md-0 text-md-center">
+                            <span>is in</span>
                         </div>
 
-                        <div class="mexc-img-container position-relative">
-                            <img src="assets/images/mexc-pc.png" class="card-img-top" alt="..." />
+                        <div class="text-md-start text-end">
+                            <img class="img-fluid w-75" src="assets/images/mexc-logo.png" alt="nedodeode-wavers-logo" />
                         </div>
+                    </div>
+
+                    <div class="mexc-img-container position-relative">
+                        <img src="assets/images/mexc-pc.png" class="card-img-top" alt="..." />
+                    </div>
+                    <div class="floating-coin-img position-relative d-none d-md-block">
+                        <img class="position-absolute" src="assets/images/floating-coin.png" alt="coin img" />
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn text-white rounded-pill border-0 py-3 px-5 my-5">
+                            Trade on MEXC global</a>
+                    </div>
+                </div>
+            </div>
+            <div class="quickswap container my-5">
+                <div class="col-11 mx-auto my-5">
+                    <div
+                        class="heading-div d-flex justify-content-between align-items-center my-5 mx-auto col-12 col-md-6">
+                        <div class="">
+                            <img class="img-fluid w-75" src="assets/images/nodewavers-logo-small.png"
+                                alt="nedodeode-wavers-logo" />
+                        </div>
+                        <div class="text-white ps-md-0 text-md-center">
+                            <span>is in</span>
+                        </div>
+
+                        <div class=" ">
+                            <div class="d-flex align-items-center">
+                                <div>
+                                    <img class="img-fluid" src="assets/images/dragon-img.png"
+                                        alt="QuickSwap Analytics logo" />
+                                </div>
+                                <p class="text-white">QuickSwap Analytics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
                         <div class="floating-coin-img position-relative d-none d-md-block">
                             <img class="position-absolute" src="assets/images/floating-coin.png" alt="coin img" />
                         </div>
-                        <div class="d-flex justify-content-center">
-                            <a href="#" class="btn text-white rounded-pill border-0 py-3 px-5 my-5">
-                                Trade on MEXC global</a
-                            >
+                        <div class="analytics-img-container">
+                            <img src="assets/images/analytics-img-pc.png" class="card-img-top" alt="..." />
                         </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn text-white rounded-pill border-0 py-3 px-5 my-5">Trade on quickswap
+                            v3</a>
                     </div>
                 </div>
-                <div class="quickswap container my-5">
-                    <div class="col-11 mx-auto my-5">
-                        <div
-                            class="heading-div d-flex justify-content-between align-items-center my-5 mx-auto col-12 col-md-6"
-                        >
-                            <div class="">
-                                <img
-                                    class="img-fluid w-75"
-                                    src="assets/images/nodewavers-logo-small.png"
-                                    alt="nedodeode-wavers-logo"
-                                />
-                            </div>
-                            <div class="text-white ps-md-0 text-md-center">
-                                <span>is in</span>
-                            </div>
+            </div>
+        </section>
+        <!-- analytics sectioin end -->
 
-                            <div class=" ">
-                                <div class="d-flex align-items-center">
-                                    <div>
-                                        <img
-                                            class="img-fluid"
-                                            src="assets/images/dragon-img.png"
-                                            alt="QuickSwap Analytics logo"
-                                        />
-                                    </div>
-                                    <p class="text-white">QuickSwap Analytics</p>
-                                </div>
-                            </div>
-                        </div>
+        <!-- what is node section start -->
 
-                        <div>
-                            <div class="floating-coin-img position-relative d-none d-md-block">
-                                <img class="position-absolute" src="assets/images/floating-coin.png" alt="coin img" />
-                            </div>
-                            <div class="analytics-img-container">
-                                <img src="assets/images/analytics-img-pc.png" class="card-img-top" alt="..." />
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <a href="#" class="btn text-white rounded-pill border-0 py-3 px-5 my-5"
-                                >Trade on quickswap v3</a
-                            >
-                        </div>
+        <section class="what-is-node-section container">
+            <div class="container position-relative">
+                <!-- Header Container: Heading + Description side by side on md+ -->
+                <div class="d-flex flex-column flex-md-row align-items-center gap-4 justify-content-center">
+                    <div class="col-12 col-md-6 mb-3 mb-md-0">
+                        <h1 class="main-title">
+                            WHAT<br class="d-none d-md-block" />
+                            IS <span class="node">NODE?</span>
+                        </h1>
+                    </div>
+                    <div class="col-12 col-md-5">
+                        <p class="intro-text">
+                            Turn your smartphone into a powerful earning machine! Nodewaves Nodes are the individual
+                            computers spread across the globe that support the Nodewaves Ecosystem. With a Node
+                            license, you can run a node on your device, receive $NWS rewards, unlock exclusive NFTs,
+                            and fuel the growth of the Nodewaves Ecosystem.
+                        </p>
                     </div>
                 </div>
-            </section>
-            <!-- analytics sectioin end -->
-
-            <!-- what is node section start -->
-
-            <section class="what-is-node-section container">
-                <div class="container position-relative">
-                    <!-- Header Container: Heading + Description side by side on md+ -->
-                    <div class="d-flex flex-column flex-md-row align-items-center gap-4 justify-content-center">
-                        <div class="col-12 col-md-6 mb-3 mb-md-0">
-                            <h1 class="main-title">
-                                WHAT<br class="d-none d-md-block" />
-                                IS <span class="node">NODE?</span>
-                            </h1>
+                <!-- Features and Cubes Container: Points + Cube side by side on md+ -->
+                <div class="d-flex flex-column flex-md-row align-items-center gap-4 mt-5">
+                    <!-- Left: Features -->
+                    <div class="flex-md-grow-1 d-flex flex-column gap-4">
+                        <!-- Feature 01 -->
+                        <div class="d-flex align-top">
+                            <span class="feature-number blue">01</span>
+                            <div>
+                                <h3 class="feature-title">Daily Rewards</h3>
+                                <p class="feature-description">
+                                    Nodewaves node operators will receive daily rewards for the nodes work.
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-5">
-                            <p class="intro-text">
-                                Turn your smartphone into a powerful earning machine! Nodewaves Nodes are the individual
-                                computers spread across the globe that support the Nodewaves Ecosystem. With a Node
-                                license, you can run a node on your device, receive $NWS rewards, unlock exclusive NFTs,
-                                and fuel the growth of the Nodewaves Ecosystem.
-                            </p>
+
+                        <!-- Feature 02 -->
+
+                        <div class="d-flex align-top">
+                            <span class="feature-number green">02</span>
+                            <div>
+                                <h3 class="feature-title">VOTING RIGHTS</h3>
+                                <p class="feature-description">
+                                    Each node is allowed to vote on proposed changes to the Nodewaves chain and
+                                    nodes will also hold greater voting power throughout the Nodewaves.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 03 -->
+
+                        <div class="d-flex align-top">
+                            <span class="feature-number yellow">03</span>
+                            <div>
+                                <h3 class="feature-title">Exclusive NFTs</h3>
+                                <p class="feature-description">
+                                    Node owners will also be rewarded with NFT drops and claims based on their
+                                    reputational score as node operators and general community members.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <!-- Features and Cubes Container: Points + Cube side by side on md+ -->
-                    <div class="d-flex flex-column flex-md-row align-items-center gap-4 mt-5">
-                        <!-- Left: Features -->
-                        <div class="flex-md-grow-1 d-flex flex-column gap-4">
-                            <!-- Feature 01 -->
-                            <div class="d-flex align-top">
-                                <span class="feature-number blue">01</span>
-                                <div>
-                                    <h3 class="feature-title">Daily Rewards</h3>
-                                    <p class="feature-description">
-                                        Nodewaves node operators will receive daily rewards for the nodes work.
-                                    </p>
-                                </div>
-                            </div>
 
-                            <!-- Feature 02 -->
-
-                            <div class="d-flex align-top">
-                                <span class="feature-number green">02</span>
-                                <div>
-                                    <h3 class="feature-title">VOTING RIGHTS</h3>
-                                    <p class="feature-description">
-                                        Each node is allowed to vote on proposed changes to the Nodewaves chain and
-                                        nodes will also hold greater voting power throughout the Nodewaves.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Feature 03 -->
-
-                            <div class="d-flex align-top">
-                                <span class="feature-number yellow">03</span>
-                                <div>
-                                    <h3 class="feature-title">Exclusive NFTs</h3>
-                                    <p class="feature-description">
-                                        Node owners will also be rewarded with NFT drops and claims based on their
-                                        reputational score as node operators and general community members.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Right: Cubes Image -->
-                        <div
-                            class="flex-md-shrink-0 d-flex justify-content-center justify-content-md-end"
-                            style="flex: 0 0 auto; width: 100%; max-width: 350px"
-                        >
-                            <img src="assets/images/box.png" alt="3D Cubes" class="cubes-image" />
-                        </div>
+                    <!-- Right: Cubes Image -->
+                    <div class="flex-md-shrink-0 d-flex justify-content-center justify-content-md-end"
+                        style="flex: 0 0 auto; width: 100%; max-width: 350px">
+                        <img src="assets/images/box.png" alt="3D Cubes" class="cubes-image" />
                     </div>
                 </div>
-                <div class="wave-background"><img src="assets/images/background.png" alt=" background" /></div>
-            </section>
-            <!-- what is node section end -->
+            </div>
+            <div class="wave-background"><img src="assets/images/background.png" alt=" background" /></div>
+        </section>
+        <!-- what is node section end -->
 
-            <!-- /*__________ key benefit  section  start__________- */ -->
-            <section class="key-benefits-section">
+        <!-- /*__________ key benefit  section  start__________- */ -->
+        <section class="key-benefits-section">
+            <div class="container">
+                <h2 class="section-title"><span class="key">KEY</span> <span class="benefits">BENEFITS</span></h2>
+
+                <div
+                    class="benefits-container d-flex flex-column flex-md-row align-items-center gap-4 justify-content-center">
+                    <!-- Transparency -->
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <img src="assets/images/transparency.png" alt="Transparency Icon" />
+                        </div>
+                        <p class="benefit-title text-white">TRANSPARENCY</p>
+                        <p class="benefit-description text-white">
+                            Nodewaves provides fully transparent system & Nodewaves will challenge crypto world by
+                            empowering you with unbiased information and tools so that you can make more informed
+                            nodes decisions.
+                        </p>
+                    </div>
+
+                    <!-- Ownership -->
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <img src="assets/images/ownership.png" alt="Ownership Icon" />
+                        </div>
+                        <p class="benefit-title text-white">OWNERSHIP</p>
+                        <p class="benefit-description text-white">
+                            We know that you do not want to remember your Nodes Data. That is why Nodewaves will be
+                            using the blockchain technology for putting the data & making your presence online more
+                            private & secure than ever.
+                        </p>
+                    </div>
+
+                    <!-- Rewards -->
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <img src="assets/images/trophy.png" alt="Rewards Icon" />
+                        </div>
+                        <p class="benefit-title text-white">REWARDS</p>
+                        <p class="benefit-description text-white">
+                            All your crypto decisions will be rewarded. The Nodewaves Referral system will reward
+                            you when you help us to grow, your invited users, and for running a node that confirms
+                            your reward from them.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /*__________ key benefit  section  end__________- */ -->
+
+        <!-- /* How does nodewAVES WORKS section start */ -->
+        <section class="how-it-works-section">
+            <div class="container">
+                <p class="section-title">
+                    HOW DOES <br />
+                    NODEWAVES<br />
+                    <span class="works">WORKS</span>
+                </p>
+
                 <div class="container">
-                    <h2 class="section-title"><span class="key">KEY</span> <span class="benefits">BENEFITS</span></h2>
+                    <div
+                        class="features-container d-flex flex-column flex-md-row align-items-center gap-4 justify-content-center">
+                        <!-- Our Solution -->
+                        <div class="feature-card d-flex col-12 col-md-6">
+                            <div class="feature-icon">
+                                <img src="assets/images/our-solution.png" alt="Our Solution Icon" />
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">OUR SOLUTION</h3>
+                                <p class="feature-description">
+                                    Nodewaves transform polygon L2 scalling solution into user friendly product.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Scale with Security -->
+                        <div class="feature-card d-flex col-12 col-md-6">
+                            <div class="feature-icon">
+                                <img src="assets/images/scale.png" alt="Scale with Security Icon" />
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">SCALE WITH SECURITY</h3>
+                                <p class="feature-description">
+                                    Polygon level security provided by proven zk-STs solution.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
                     <div
-                        class="benefits-container d-flex flex-column flex-md-row align-items-center gap-4 justify-content-center"
-                    >
-                        <!-- Transparency -->
-                        <div class="benefit-card">
-                            <div class="benefit-icon">
-                                <img src="assets/images/transparency.png" alt="Transparency Icon" />
+                        class="features-container d-flex flex-column flex-md-row align-items-center gap-4 justify-content-center">
+                        <!-- Reliably Programmable -->
+                        <div class="feature-card d-flex col-12 col-md-6">
+                            <div class="feature-icon">
+                                <img src="assets/images/reliably.png" alt="Our Solution Icon" />
                             </div>
-                            <p class="benefit-title text-white">TRANSPARENCY</p>
-                            <p class="benefit-description text-white">
-                                Nodewaves provides fully transparent system & Nodewaves will challenge crypto world by
-                                empowering you with unbiased information and tools so that you can make more informed
-                                nodes decisions.
-                            </p>
-                        </div>
-
-                        <!-- Ownership -->
-                        <div class="benefit-card">
-                            <div class="benefit-icon">
-                                <img src="assets/images/ownership.png" alt="Ownership Icon" />
-                            </div>
-                            <p class="benefit-title text-white">OWNERSHIP</p>
-                            <p class="benefit-description text-white">
-                                We know that you do not want to remember your Nodes Data. That is why Nodewaves will be
-                                using the blockchain technology for putting the data & making your presence online more
-                                private & secure than ever.
-                            </p>
-                        </div>
-
-                        <!-- Rewards -->
-                        <div class="benefit-card">
-                            <div class="benefit-icon">
-                                <img src="assets/images/trophy.png" alt="Rewards Icon" />
-                            </div>
-                            <p class="benefit-title text-white">REWARDS</p>
-                            <p class="benefit-description text-white">
-                                All your crypto decisions will be rewarded. The Nodewaves Referral system will reward
-                                you when you help us to grow, your invited users, and for running a node that confirms
-                                your reward from them.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- /*__________ key benefit  section  end__________- */ -->
-
-            <!-- /* How does nodewAVES WORKS section start */ -->
-            <section class="how-it-works-section">
-                <div class="container">
-                    <p class="section-title">
-                        HOW DOES <br />
-                        NODEWAVES<br />
-                        <span class="works">WORKS</span>
-                    </p>
-
-                    <div class="container">
-                        <div
-                            class="features-container d-flex flex-column flex-md-row align-items-center gap-4 justify-content-center"
-                        >
-                            <!-- Our Solution -->
-                            <div class="feature-card d-flex col-12 col-md-6">
-                                <div class="feature-icon">
-                                    <img src="assets/images/our-solution.png" alt="Our Solution Icon" />
-                                </div>
-                                <div class="feature-content">
-                                    <h3 class="feature-title">OUR SOLUTION</h3>
-                                    <p class="feature-description">
-                                        Nodewaves transform polygon L2 scalling solution into user friendly product.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <!-- Scale with Security -->
-                            <div class="feature-card d-flex col-12 col-md-6">
-                                <div class="feature-icon">
-                                    <img src="assets/images/scale.png" alt="Scale with Security Icon" />
-                                </div>
-                                <div class="feature-content">
-                                    <h3 class="feature-title">SCALE WITH SECURITY</h3>
-                                    <p class="feature-description">
-                                        Polygon level security provided by proven zk-STs solution.
-                                    </p>
-                                </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">Reliably Programmable</h3>
+                                <p class="feature-description">
+                                    Enables developers with provable on-chain complexity native support.
+                                </p>
                             </div>
                         </div>
 
-                        <div
-                            class="features-container d-flex flex-column flex-md-row align-items-center gap-4 justify-content-center"
-                        >
-                            <!-- Reliably Programmable -->
-                            <div class="feature-card d-flex col-12 col-md-6">
-                                <div class="feature-icon">
-                                    <img src="assets/images/reliably.png" alt="Our Solution Icon" />
-                                </div>
-                                <div class="feature-content">
-                                    <h3 class="feature-title">Reliably Programmable</h3>
-                                    <p class="feature-description">
-                                        Enables developers with provable on-chain complexity native support.
-                                    </p>
-                                </div>
+                        <!-- Open & Permissionless -->
+                        <div class="feature-card d-flex col-12 col-md-6">
+                            <div class="feature-icon">
+                                <img src="assets/images/wallet.png" alt="Scale with Security Icon" />
                             </div>
-
-                            <!-- Open & Permissionless -->
-                            <div class="feature-card d-flex col-12 col-md-6">
-                                <div class="feature-icon">
-                                    <img src="assets/images/wallet.png" alt="Scale with Security Icon" />
-                                </div>
-                                <div class="feature-content">
-                                    <h3 class="feature-title">Open & Permissionless</h3>
-                                    <p class="feature-description">
-                                        Building towards a decentralized and permissionless network.
-                                    </p>
-                                </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">Open & Permissionless</h3>
+                                <p class="feature-description">
+                                    Building towards a decentralized and permissionless network.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- /* How does nodewAVES WORKS section end */ -->
+            </div>
+        </section>
+        <!-- /* How does nodewAVES WORKS section end */ -->
 
-            <!-- Key FEATURES section start  -->
-            <section class="key-features-section my-5">
-                <div class="container">
-                    <section class="">
-                        <div class="floating-coin-img position-relative d-none d-md-block">
-                            <img src="assets/images/floating-coin-3.png.png" alt="floating-coin-3" />
+        <!-- Key FEATURES section start  -->
+        <section class="key-features-section my-5">
+            <div class="container">
+                <section class="">
+                    <div class="floating-coin-img position-relative d-none d-md-block">
+                        <img src="assets/images/floating-coin-3.png.png" alt="floating-coin-3" />
+                    </div>
+                    <h1 class="text-center section-title">KEY <span>FEATURES</span></h1>
+                    <div class="container-fluid d-md-flex flex-md-row col-md-7 col-lg-6">
+                        <div class="order-md-2 text-center">
+                            <img src="assets/images/laptop-img.png" alt="Software Nodes Illustration"
+                                class="img-fluid" />
                         </div>
-                        <h1 class="text-center section-title">KEY <span>FEATURES</span></h1>
-                        <div class="container-fluid d-md-flex flex-md-row col-md-7 col-lg-6">
-                            <div class="order-md-2 text-center">
-                                <img
-                                    src="assets/images/laptop-img.png"
-                                    alt="Software Nodes Illustration"
-                                    class="img-fluid"
-                                />
+                        <div class="description row align-items-center g-4">
+                            <div class="col-md-7 col-lg-6">
+                                <h2 class="mb-3 feature-title">SOFTWARE NODES</h2>
+                                <p class="feature-description">
+                                    Buy a license, run the node software to confirm transactions, and earn rewards!
+                                </p>
                             </div>
-                            <div class="description row align-items-center g-4">
-                                <div class="col-md-7 col-lg-6">
-                                    <h2 class="mb-3 feature-title">SOFTWARE NODES</h2>
-                                    <p class="feature-description">
-                                        Buy a license, run the node software to confirm transactions, and earn rewards!
-                                    </p>
-                                </div>
-                                <div class="btn-div col-md-7 col-lg-6 text-center text-md-start my-5">
-                                    <a href="#" class="btn rounded-pill border-0 text-white">LEARN MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </section>
-            <!-- Key FEATURES section end  -->
-            <!-- Tokenomics section start  -->
-            <section class="tokenomics-section container mb-5">
-                <p class="section-title">Tokenomics</p>
-                <div class="parent container-fluid">
-                    <div class="div1 graph-div d-flex">
-                        <div class="container-fluid d-flex justify-content-center align-items-center">
-                            <div
-                                class="position-relative graph-container d-flex justify-content-center align-items-center"
-                            >
-                                <canvas id="arcGraph"></canvas>
-                                <div class="img-container">
-                                    <img
-                                        src="assets/images/nodewavers-logo-small-for-graph.png"
-                                        class="graph-logo img-fluid"
-                                        alt="Logo"
-                                    />
-                                </div>
+                            <div class="btn-div col-md-7 col-lg-6 text-center text-md-start my-5">
+                                <a href="#" class="btn rounded-pill border-0 text-white">LEARN MORE</a>
                             </div>
                         </div>
                     </div>
-                    <div class="div2 list-div container-sm text-white">
-                        <ul id="dynamic-token-list" class="list-group bg-transparent"></ul>
-                    </div>
-                    <div class="div3 text-white container">
-                        <h2 class="mb-4 feature-title">Interesting Features</h2>
-
-                        <div class="checklist-container">
-                            <div class="checklist-item">
-                                <div class="check-icon red-check">✓</div>
-                                <div class="checklist-text">
-                                    The largest pool is reserved for the NODE rewards at 25%
-                                </div>
-                            </div>
-
-                            <div class="checklist-item">
-                                <div class="check-icon green-check">✓</div>
-                                <div class="checklist-text">
-                                    The largest pool is reserved for the community PoB rewards at 25%
-                                </div>
-                            </div>
-
-                            <div class="checklist-item">
-                                <div class="check-icon dark-purple-check">✓</div>
-                                <div class="checklist-text">
-                                    3% of the tokens will be allocated towards metaverse partnerships
-                                </div>
-                            </div>
-
-                            <div class="checklist-item">
-                                <div class="check-icon olive-check">✓</div>
-                                <div class="checklist-text">The largest pool is reserved for Liquidity pool 15%</div>
-                            </div>
-
-                            <div class="checklist-item">
-                                <div class="check-icon purple-check">✓</div>
-                                <div class="checklist-text">
-                                    Team tokens are locked for 12 months and thereafter vesting for 18 months.
-                                </div>
-                            </div>
-
-                            <div class="checklist-item">
-                                <div class="check-icon blue-check">✓</div>
-                                <div class="checklist-text">
-                                    5% of raised funds will go towards talent acquisition and creation of 3d modelling
-                                    and gaming...
-                                </div>
-                            </div>
-
-                            <div class="checklist-item">
-                                <div class="check-icon dark-green-check">✓</div>
-                                <div class="checklist-text">
-                                    Seed & Private sales 3% tokens are locked for 12 months and thereafter vesting for
-                                    18 months.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="div4 text-center">
-                        <h2 class="my-4 feature-title">Max Supply = 10 billion <br />No IDO/ICO</h2>
-                    </div>
-                </div>
-            </section>
-            <!-- Tokenomics section end -->
-
-            <!-- ECOSYSTEM section start -->
-            <section class="ecosystem-section">
-                <div class="container">
-                    <p class="mb-4 section-title">ECOSYSTEM</p>
-                    <div class="img-and-hr">
-                        <div class="content">
+                </section>
+            </div>
+        </section>
+        <!-- Key FEATURES section end  -->
+        <!-- Tokenomics section start  -->
+        <section class="tokenomics-section container mb-5">
+            <p class="section-title">Tokenomics</p>
+            <div class="parent container-fluid">
+                <div class="div1 graph-div d-flex">
+                    <div class="container-fluid d-flex justify-content-center align-items-center">
+                        <div class="position-relative graph-container d-flex justify-content-center align-items-center">
+                            <canvas id="arcGraph"></canvas>
                             <div class="img-container">
-                                <img class="boxes-img" src="assets/images/boxes.png" alt=" boxes" />
-                                <img class="floating-img" src="assets/images/floating.png" alt="floating" />
-                                <img class="big-coin" src="assets/images/big-coin.png" alt="big coin" />
-                                <hr class="top-hr" />
+                                <img src="assets/images/nodewavers-logo-small-for-graph.png"
+                                    class="graph-logo img-fluid" alt="Logo" />
                             </div>
                         </div>
-                        <hr class="bottom-hr" />
                     </div>
                 </div>
-                <div class="container-fluid horizontal-hr-container"><hr class="horizontal-hr" /></div>
-            </section>
-            <section class="ecosystem-section-details container pb-5">
-                <div class="features-grid container">
-                    <div class="feature-item">
-                        <img class="img-fluid" src="assets/images/icon-1.png" />
-                        <p class="feature-title">LITE NODE</p>
-                    </div>
-                    <div class="feature-item">
-                        <img class="img-fluid" src="assets/images/icon-2.png" />
-                        <p class="feature-title">FOUNDER NODE</p>
-                    </div>
-                    <div class="feature-item">
-                        <img class="img-fluid" src="assets/images/icon-3.png" />
-                        <p class="feature-title">TAP-TO-EARN</p>
-                    </div>
-                    <div class="feature-item">
-                        <img class="img-fluid" src="assets/images/icon-4.png" />
-                        <p class="feature-title">PROOF OF STAKE</p>
-                    </div>
-                    <div class="feature-item">
-                        <img class="img-fluid" src="assets/images/icon-5.png" />
-                        <p class="feature-title">PROOF OF BURN</p>
-                    </div>
-                    <div class="feature-item">
-                        <img class="img-fluid" src="assets/images/icon-6.png" />
-                        <p class="feature-title">LAUNCH PAD</p>
-                    </div>
-                    <div class="feature-item">
-                        <img class="img-fluid" src="assets/images/icon-7.png" />
-                        <p class="feature-title">MARKETPLACE</p>
-                    </div>
-                    <div class="feature-item">
-                        <img class="img-fluid" src="assets/images/icon-8.png" />
-                        <p class="feature-title">FARMING</p>
-                    </div>
+                <div class="div2 list-div container-sm text-white">
+                    <ul id="dynamic-token-list" class="list-group bg-transparent"></ul>
                 </div>
-            </section>
-            <!-- ECOSYSTEM section end -->
+                <div class="div3 text-white container">
+                    <h2 class="mb-4 feature-title">Interesting Features</h2>
 
-            <!-- Latest News & Articles start -->
-            <section class="latest-news-and-articles-section">
-                <div class="container">
-                    <p class="mb-4 section-title">
-                        Latest
-                        <span
-                            >News & <br />
-                            Articles</span
-                        >
-                    </p>
-                    <div class="content border">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis sunt eligendi consequuntur
-                        alias nihil ex nostrum accusantium iure illo nisi. Autem, unde perspiciatis exercitationem earum
-                        sunt iure at quod enim.
+                    <div class="checklist-container">
+                        <div class="checklist-item">
+                            <div class="check-icon red-check">✓</div>
+                            <div class="checklist-text">
+                                The largest pool is reserved for the NODE rewards at 25%
+                            </div>
+                        </div>
+
+                        <div class="checklist-item">
+                            <div class="check-icon green-check">✓</div>
+                            <div class="checklist-text">
+                                The largest pool is reserved for the community PoB rewards at 25%
+                            </div>
+                        </div>
+
+                        <div class="checklist-item">
+                            <div class="check-icon dark-purple-check">✓</div>
+                            <div class="checklist-text">
+                                3% of the tokens will be allocated towards metaverse partnerships
+                            </div>
+                        </div>
+
+                        <div class="checklist-item">
+                            <div class="check-icon olive-check">✓</div>
+                            <div class="checklist-text">The largest pool is reserved for Liquidity pool 15%</div>
+                        </div>
+
+                        <div class="checklist-item">
+                            <div class="check-icon purple-check">✓</div>
+                            <div class="checklist-text">
+                                Team tokens are locked for 12 months and thereafter vesting for 18 months.
+                            </div>
+                        </div>
+
+                        <div class="checklist-item">
+                            <div class="check-icon blue-check">✓</div>
+                            <div class="checklist-text">
+                                5% of raised funds will go towards talent acquisition and creation of 3d modelling
+                                and gaming...
+                            </div>
+                        </div>
+
+                        <div class="checklist-item">
+                            <div class="check-icon dark-green-check">✓</div>
+                            <div class="checklist-text">
+                                Seed & Private sales 3% tokens are locked for 12 months and thereafter vesting for
+                                18 months.
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <!-- Latest News & Articles end -->
-        </div>
 
-        <script src="assets/js/main.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"
-        ></script>
-        <!-- Code injected by live-server -->
-        <script>
-            // <![CDATA[  <-- For SVG support
-            if ("WebSocket" in window) {
-                (function () {
-                    function refreshCSS() {
-                        var sheets = [].slice.call(document.getElementsByTagName("link"));
-                        var head = document.getElementsByTagName("head")[0];
-                        for (var i = 0; i < sheets.length; ++i) {
-                            var elem = sheets[i];
-                            var parent = elem.parentElement || head;
-                            parent.removeChild(elem);
-                            var rel = elem.rel;
-                            if (
-                                (elem.href && typeof rel != "string") ||
-                                rel.length == 0 ||
-                                rel.toLowerCase() == "stylesheet"
-                            ) {
-                                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
-                                elem.href =
-                                    url +
-                                    (url.indexOf("?") >= 0 ? "&" : "?") +
-                                    "_cacheOverride=" +
-                                    new Date().valueOf();
-                            }
-                            parent.appendChild(elem);
+                <div class="div4 text-center">
+                    <h2 class="my-4 feature-title">Max Supply = 10 billion <br />No IDO/ICO</h2>
+                </div>
+            </div>
+        </section>
+        <!-- Tokenomics section end -->
+
+        <!-- ECOSYSTEM section start -->
+        <section class="ecosystem-section">
+            <div class="container">
+                <p class="mb-4 section-title">ECOSYSTEM</p>
+                <div class="img-and-hr">
+                    <div class="content">
+                        <div class="img-container">
+                            <img class="boxes-img" src="assets/images/boxes.png" alt=" boxes" />
+                            <img class="floating-img" src="assets/images/floating.png" alt="floating" />
+                            <img class="big-coin" src="assets/images/big-coin.png" alt="big coin" />
+                            <hr class="top-hr" />
+                        </div>
+                    </div>
+                    <hr class="bottom-hr" />
+                </div>
+            </div>
+            <div class="container-fluid horizontal-hr-container">
+                <hr class="horizontal-hr" />
+            </div>
+        </section>
+        <section class="ecosystem-section-details container pb-5">
+            <div class="features-grid container">
+                <div class="feature-item">
+                    <img class="img-fluid" src="assets/images/icon-1.png" />
+                    <p class="feature-title">LITE NODE</p>
+                </div>
+                <div class="feature-item">
+                    <img class="img-fluid" src="assets/images/icon-2.png" />
+                    <p class="feature-title">FOUNDER NODE</p>
+                </div>
+                <div class="feature-item">
+                    <img class="img-fluid" src="assets/images/icon-3.png" />
+                    <p class="feature-title">TAP-TO-EARN</p>
+                </div>
+                <div class="feature-item">
+                    <img class="img-fluid" src="assets/images/icon-4.png" />
+                    <p class="feature-title">PROOF OF STAKE</p>
+                </div>
+                <div class="feature-item">
+                    <img class="img-fluid" src="assets/images/icon-5.png" />
+                    <p class="feature-title">PROOF OF BURN</p>
+                </div>
+                <div class="feature-item">
+                    <img class="img-fluid" src="assets/images/icon-6.png" />
+                    <p class="feature-title">LAUNCH PAD</p>
+                </div>
+                <div class="feature-item">
+                    <img class="img-fluid" src="assets/images/icon-7.png" />
+                    <p class="feature-title">MARKETPLACE</p>
+                </div>
+                <div class="feature-item">
+                    <img class="img-fluid" src="assets/images/icon-8.png" />
+                    <p class="feature-title">FARMING</p>
+                </div>
+            </div>
+        </section>
+        <!-- ECOSYSTEM section end -->
+
+        <!-- Latest News & Articles start -->
+        <section class="latest-news-and-articles-section">
+            <div class="container">
+                <p class="mb-4 section-title">
+                    Latest
+                    <span>News & <br />
+                        Articles</span>
+                </p>
+                <div class="content border">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis sunt eligendi consequuntur
+                    alias nihil ex nostrum accusantium iure illo nisi. Autem, unde perspiciatis exercitationem earum
+                    sunt iure at quod enim.
+                </div>
+            </div>
+        </section>
+        <!-- Latest News & Articles end -->
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ("WebSocket" in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (
+                            (elem.href && typeof rel != "string") ||
+                            rel.length == 0 ||
+                            rel.toLowerCase() == "stylesheet"
+                        ) {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                            elem.href =
+                                url +
+                                (url.indexOf("?") >= 0 ? "&" : "?") +
+                                "_cacheOverride=" +
+                                new Date().valueOf();
                         }
+                        parent.appendChild(elem);
                     }
-                    var protocol = window.location.protocol === "http:" ? "ws://" : "wss://";
-                    var address = protocol + window.location.host + window.location.pathname + "/ws";
-                    var socket = new WebSocket(address);
-                    socket.onmessage = function (msg) {
-                        if (msg.data == "reload") window.location.reload();
-                        else if (msg.data == "refreshcss") refreshCSS();
-                    };
-                    if (sessionStorage && !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")) {
-                        console.log("Live reload enabled.");
-                        sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
-                    }
-                })();
-            } else {
-                console.error("Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.");
-            }
-            // ]]>
-        </script>
+                }
+                var protocol = window.location.protocol === "http:" ? "ws://" : "wss://";
+                var address = protocol + window.location.host + window.location.pathname + "/ws";
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == "reload") window.location.reload();
+                    else if (msg.data == "refreshcss") refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")) {
+                    console.log("Live reload enabled.");
+                    sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+                }
+            })();
+        } else {
+            console.error("Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.");
+        }
+        // ]]>
+    </script>
 
-        <iframe
-            frameborder="0"
-            scrolling="no"
-            style="background-color: transparent; border: 0px; display: none"
-        ></iframe>
-        <div
-            id="GOOGLE_INPUT_CHEXT_FLAG"
-            style="display: none"
-            input=""
-            input_stat='{"tlang":true,"tsbc":true,"pun":true,"mk":true,"ss":true}'
-        ></div>
-    </body>
+    <iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none"></iframe>
+    <div id="GOOGLE_INPUT_CHEXT_FLAG" style="display: none" input=""
+        input_stat='{"tlang":true,"tsbc":true,"pun":true,"mk":true,"ss":true}'></div>
+</body>
+
 </html>
