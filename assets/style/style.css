@@ -169,42 +169,6 @@ span {
     margin-top: var(--bs-gutter-y);
 }
 
-.col-1 {
-    flex: 0 0 auto;
-    width: 8.33333333%;
-}
-
-.col-7 {
-    flex: 0 0 auto;
-    width: 58.33333333%;
-}
-
-@media (min-width: 992px) {
-    .col-lg-2 {
-        flex: 0 0 auto;
-        width: 16.66666667%;
-    }
-    .col-lg-10 {
-        flex: 0 0 auto;
-        width: 83.33333333%;
-    }
-}
-
-/* Bootstrap Utility Classes - Only Used */
-.d-inline-block {
-    display: inline-block !important;
-}
-
-.d-lg-none {
-    display: none !important;
-}
-
-@media (min-width: 992px) {
-    .d-lg-none {
-        display: none !important;
-    }
-}
-
 .align-items-center {
     align-items: center !important;
 }
@@ -218,10 +182,6 @@ span {
     z-index: 9;
 }
 
-.overflow-hidden {
-    overflow: hidden !important;
-}
-
 .p-0 {
     padding: 0 !important;
 }
@@ -233,117 +193,6 @@ span {
     max-width: 1600px;
     margin: 0 auto;
     background-color: #0d0404;
-}
-
-.MinWidth {
-    /* MinWidth container */
-    position: relative;
-}
-
-@media (min-width: 1440px) {
-    .MinWidth {
-        max-width: 1440px;
-        margin: 0 auto;
-    }
-}
-
-.containerX {
-    margin: 0 12rem !important;
-    max-height: 130px;
-}
-
-@media (min-width: 1200px) and (max-width: 1399px) {
-    .containerX {
-        margin: 0 8rem !important;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .containerX {
-        margin: 0 6rem !important;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .containerX {
-        margin: 0 4rem !important;
-    }
-}
-
-@media screen and (min-width: 576px) and (max-width: 767px) {
-    .containerX {
-        margin: 0 3rem !important;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .containerX {
-        margin: 0 2rem !important;
-    }
-}
-
-.Top-Header {
-    padding: 5rem 0;
-}
-
-.nav-logo {
-    height: 50px;
-}
-
-.Navbar {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-
-.nav-menu {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
-
-.menu_item {
-    font-weight: 500;
-    color: #c2c2c2;
-    position: relative;
-    transition: 0.3s;
-    padding: 0 0 0.4rem;
-    display: block;
-}
-
-.hamburger {
-    display: none;
-}
-
-.bar {
-    display: block;
-    width: 20px;
-    height: 2px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--color-White);
-}
-
-.wallet-connect {
-    background-color: var(--primary-color) !important;
-    background: var(--primary-color) !important;
-}
-
-.theme-content {
-    position: relative;
-    z-index: 1;
-}
-
-.mob-nav-logo {
-    display: none;
-}
-
-.close-nav {
-    /* Close navigation button styles - styles can be added here if needed */
-    cursor: pointer;
 }
 
 /* Responsive Styles */
@@ -368,78 +217,6 @@ span {
 @media only screen and (max-width: 991px) {
     html {
         font-size: 8px;
-    }
-
-    .Navbar {
-        display: grid;
-        align-content: center;
-        justify-content: end;
-    }
-
-    .nav-menu {
-        position: absolute;
-        left: 0;
-        top: -100vh;
-        background-color: rgba(0, 0, 0, 0.95);
-        width: 100%;
-        transition: 0.8s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        z-index: 8888;
-        height: 100vh;
-        display: block;
-    }
-
-    .mob-nav-logo {
-        padding: 0 34px 0 56px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .mob-nav-logo a {
-        width: 190px;
-        text-align: left;
-    }
-
-    .mob-nav-logo a img {
-        height: 50px;
-        margin-top: 20px;
-    }
-
-    .mob-nav-logo .ri-close-line {
-        font-size: 3rem;
-        color: var(--color-White);
-        padding: 1rem;
-        cursor: pointer;
-    }
-
-    .menu_item {
-        text-align: start;
-        color: #c2c2c2;
-        font-size: 2rem;
-        font-weight: 600;
-        display: inline-block;
-    }
-
-    .hamburger {
-        display: inline-block;
-        cursor: pointer;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:first-child {
-        transform: translateY(6px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .Top-Header {
-        padding: 3rem 0;
     }
 }
 
@@ -551,8 +328,7 @@ span {
 .slider-content {
     background: linear-gradient(0deg, transparent 5%, rgba(0, 0, 0, 1) 90%);
 }
-.carousel-item .slider-bg-img,
-.bg-blub-img {
+.carousel-item .slider-bg-img {
     height: 100%;
     filter: sepia(100%) saturate(700%) hue-rotate(330deg) brightness(80%) contrast(150%);
     top: 0;
@@ -761,12 +537,6 @@ span {
     justify-content: center;
 }
 
-.brand-logo {
-    max-width: 150px;
-    height: 60px;
-    object-fit: contain;
-}
-
 .brand-logo-img {
     max-width: 180px;
     height: 50px;
@@ -920,14 +690,7 @@ span {
 /* analytics sectioin end  */
 
 /* <!-- what is node section start --> */
-.what-is-node-section {
-    /* position: relative; */
-    /* overflow: hidden; */
-}
 
-.wave-background {
-    /* overflow:hidden; */
-}
 .wave-background img {
     width: 67.5%;
     transform: scale(2) translate(0px, -70px);
@@ -1225,10 +988,6 @@ span {
 
 /*__________ How does nodewAVES WORKS section  start__________- */
 
-.how-it-works-section .solutions-section {
-    padding: 60px 0;
-    background: linear-gradient(180deg, #0a0000 0%, #1a0510 100%);
-}
 .how-it-works-section .feature-card {
     padding: 30px 20px;
     transition: all 0.3s ease;
@@ -1285,11 +1044,6 @@ span {
     right: 0;
     width: 8%;
     position: absolute;
-}
-@media screen and (min-width: 768px) {
-    .key-features-section .btn-div {
-        /* width: 75%; */
-    }
 }
 
 /* <!-- Key FEATURES section end  --> */
