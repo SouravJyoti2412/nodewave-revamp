@@ -14,80 +14,49 @@
 
 <body>
     <div class="content-section">
-        <section class="MinWidth position-relative">
-            <header class="containerX Top-Header">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-7 col-lg-2">
-                        <a class="d-inline-block" href="index"><img src="assets/images/nodewaves-logo.png" alt="logo"
-                                class="img-fluid nav-logo" /></a>
-                    </div>
-                    <div class="col-1 col-lg-10 text-end">
-                        <nav class="Navbar">
-                            <ul class="nav-menu">
-                                <li class="mob-nav-logo d-lg-none">
-                                    <a class="d-inline-block" href="index"><img src="assets/images/nodewaves-logo.png"
-                                            alt="logo" class="img-fluid" /></a>
-                                    <i class="ri-close-line close-nav">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
-                                            height="24">
-                                            <path fill="none" d="M0 0h24v24H0z"></path>
-                                            <path fill="white"
-                                                d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z">
-                                            </path>
-                                        </svg>
-                                    </i>
-                                </li>
-                                <li class="nav-item nav-link-nav">
-                                    <a class="menu_item" href="index">Home</a>
-                                </li>
-                                <li class="nav-item nav-link-nav">
-                                    <a class="menu_item ecosystem" href="javascript:void(0);">Ecosystem</a>
-                                </li>
-                                <!-- <li class="nav-item nav-link-nav"><a class="menu_item node " href="javascript:void(0);">Node</a></li> -->
-                                <li class="nav-item nav-link-nav">
-                                    <a class="menu_item token_clk" href="javascript:void(0);">Token</a>
-                                </li>
+        <div class="navbar-custom">
+            <nav class="container navbar navbar-expand-lg navbar-dark   ">
+                <div class="container-fluid ">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/nodewaves-logo.png" alt="Node Waves Logo" class="navbar-logo">
+                    </a>
 
-                                <li class="nav-item nav-link-nav dropdown">
-                                    <a class="menu_item">Products</a>
-                                </li>
+                    <!-- Mobile Toggle Button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="border-0">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                                <li class="nav-item nav-link-nav">
-                                    <a class="menu_item nws" href="javascript:void(0);">Get $NWS</a>
-                                </li>
-
-                                <!-- <li class="nav-item nav-link-nav"><a class="menu_item nws " href="swap-nws">NwsSwap</a></li>                            -->
-                                <li class="nav-item nav-link-nav">
-                                    <a class="menu_item" href="https://stake.nodewaves.com" target="_blank">Stake</a>
-                                </li>
-                                <w3m-core-button class="wallet-connect"
-                                    style="float: inline-start; margin-left: 50px"><template
-                                        shadowrootmode="open"><!----><w3m-connect-button
-                                            data-testid="partial-core-connect-button" label="Connect Wallet"><template
-                                                shadowrootmode="open"><!----><w3m-button-big
-                                                    data-testid="partial-connect-button"><template
-                                                        shadowrootmode="open"><!----><button
-                                                            data-testid="component-big-button" class="  ">
-                                                            <slot></slot>
-                                                        </button></template><!--?lit$421597596$--><!--?lit$421597596$-->
-
-                                                    <w3m-text variant="medium-regular" color="inverse"
-                                                        data-testid="partial-connect-text"><template
-                                                            shadowrootmode="open"><!----><span
-                                                                data-testid="component-text">
-                                                                <slot class="w3m-medium-regular w3m-color-inverse">
-                                                                </slot>
-                                                            </span></template><!--?lit$421597596$-->Connect
-                                                        Wallet</w3m-text></w3m-button-big></template></w3m-connect-button></template></w3m-core-button>
-                            </ul>
-                            <div class="hamburger p-0">
-                                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-                            </div>
-                        </nav>
+                    <!-- Navigation Menu -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link  " href="# ">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="# ">Ecosystem</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="# ">Token</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="# ">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="# ">Get $NWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="# ">Stake</a>
+                            </li>
+                            <li class="nav-item ms-lg-3">
+                                <button class="btn btn-connect">Connect Wallet</button>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </header>
-        </section>
+            </nav>
+        </div>
         <!-- slider section start -->
         <section class="slider-section position-relative">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
