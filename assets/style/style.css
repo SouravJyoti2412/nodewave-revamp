@@ -83,12 +83,12 @@ body {
     margin: 0;
     font-family: Montserrat, sans-serif;
     font-size: 1.4rem;
-    font-weight: var(--bs-body-font-weight);
+    /* font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
     color: var(--bs-body-color);
     background-color: var(--color-DarkGrey);
     -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent; */
 }
 
 a {
@@ -178,12 +178,8 @@ span {
 }
 
 .position-relative {
-    position: relative !important;
-    z-index: 9;
-}
-
-.p-0 {
-    padding: 0 !important;
+    /* position: relative !important; */
+    /* z-index: 9; */
 }
 
 /* Custom Navigation Styles */
@@ -691,29 +687,6 @@ span {
 
 /* <!-- what is node section start --> */
 
-.wave-background img {
-    width: 67.5%;
-    transform: scale(2) translate(0px, -70px);
-}
-@media screen and (min-width: 768px) {
-    .wave-background img {
-        width: 95%;
-        transform: scale(1.2) translate(0px, -200px);
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .wave-background img {
-        width: 95%;
-        transform: scale(1.2) translate(0px, -215px);
-    }
-}
-@media screen and (min-width: 1200px) {
-    .wave-background img {
-        width: 97%;
-        transform: scale(1.2) translate(10px, -260px);
-    }
-}
 .main-title,
 .key-benefits-section .section-title,
 .how-it-works-section .section-title,
