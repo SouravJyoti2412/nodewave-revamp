@@ -1,34 +1,9 @@
 @charset "UTF-8";
 
 :root {
-    --bs-blue: #0d6efd;
-    --bs-indigo: #6610f2;
-    --bs-purple: #6f42c1;
-    --bs-pink: #d63384;
-    --bs-red: #dc3545;
-    --bs-orange: #fd7e14;
-    --bs-yellow: #ffc107;
-    --bs-green: #198754;
-    --bs-teal: #20c997;
-    --bs-cyan: #0dcaf0;
     --bs-white: #fff;
-    --bs-gray: #6c757d;
-    --bs-gray-dark: #343a40;
-    --bs-primary: #0d6efd;
-    --bs-body-font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    --bs-body-font-size: 1rem;
-    --bs-body-font-weight: 400;
-    --bs-body-line-height: 1.5;
-    --bs-body-color: #212529;
-    --bs-body-bg: #fff;
-    --w3m-background-color: #e30f2e !important;
-    --w3m-accent-color: #e30f2e !important;
     --primary-color: #e30f2e;
-    --color-DarkGrey: #161616;
-    --color-Red: #e01a4a;
-    --color-Black: #000;
     --color-White: #fff;
-    --Primary-Gradient: linear-gradient(92.87deg, #e30f2e, #db1360);
     --custom-pink: #df1147;
     --color-custom-black: #0e0e0e;
 }
@@ -83,27 +58,6 @@ body {
     margin: 0;
     font-family: Montserrat, sans-serif;
     font-size: 1.4rem;
-    /* font-weight: var(--bs-body-font-weight);
-    line-height: var(--bs-body-line-height);
-    color: var(--bs-body-color);
-    background-color: var(--color-DarkGrey);
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent; */
-}
-
-a {
-    color: #0d6efd;
-    text-decoration: underline;
-}
-
-a:hover {
-    color: #0a58ca;
-}
-
-a:not([href]):not([class]),
-a:not([href]):not([class]):hover {
-    color: inherit;
-    text-decoration: none;
 }
 
 img,
@@ -116,37 +70,8 @@ svg {
     height: auto;
 }
 
-ul {
-    padding-left: 2rem;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-ul ul {
-    margin-bottom: 0;
-}
-
-button {
-    border-radius: 0;
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    text-transform: none;
-    -webkit-appearance: button;
-    appearance: button;
-}
-
 button:focus:not(:focus-visible) {
     outline: 0;
-}
-
-button:not(:disabled) {
-    cursor: pointer;
-}
-
-span {
-    display: inline;
 }
 
 /* Bootstrap Grid System - Only Used Classes */
