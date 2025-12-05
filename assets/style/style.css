@@ -674,6 +674,20 @@ span {
 
 /* <!-- what is node section start --> */
 
+.what-is-node-section-container {
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    height: 60em;
+    background-blend-mode: screen;
+}
+
+@media screen and (min-width: 768px) {
+    .what-is-node-section-container {
+        height: 55em;
+    }
+}
+
 .main-title,
 .key-benefits-section .section-title,
 .how-it-works-section .section-title,
