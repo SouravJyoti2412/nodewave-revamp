@@ -576,7 +576,7 @@ button:focus:not(:focus-visible) {
     background-image: url(../images/background.png);
     background-position: center;
     background-size: cover;
-    height: 60em;
+    height: 67em;
     background-blend-mode: screen;
 }
 
