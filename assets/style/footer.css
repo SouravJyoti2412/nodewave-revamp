@@ -1,0 +1,291 @@
+.footer-section {
+    color: white;
+    padding: 2em 0 0 0;
+    border-top: 1px solid rgba(230, 230, 230, 0.2);
+    margin-top: 4em;
+}
+
+.footer-logo img {
+    height: 40px;
+    width: auto;
+    max-width: 180px;
+    margin-bottom: 15px;
+}
+
+.footer-tagline {
+    margin-bottom: 25px;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.subscribe-input {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-bottom: none !important;
+    padding: 10px 15px;
+    border-radius: 0;
+}
+
+.subscribe-input::placeholder {
+    color: white;
+}
+
+.subscribe-input:focus {
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+.subscribe-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1em;
+    text-transform: uppercase;
+    border-radius: 0;
+    box-shadow: none !important;
+}
+.subscribe-btn:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.footer-title {
+    margin-bottom: 1.3em;
+    color: white;
+}
+
+.footer-links li {
+    margin-bottom: 1em;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 3em;
+    height: 3em;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.footer-bottom {
+    border-top: 1px solid #2a2a2a;
+    padding: 1.5em 0;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .footer-section {
+        padding: 3em 0 0 0;
+        margin-top: 5em;
+    }
+
+    .footer-logo img {
+        height: 45px;
+        max-width: 190px;
+    }
+
+    .footer-title {
+        margin-top: 0;
+    }
+
+    .social-icon {
+        width: 3.5em;
+        height: 3.5em;
+    }
+
+    .social-icon img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .scroll-top-btn {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+    .footer-links li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+    .footer-section {
+        padding: 3em 0 0 0;
+        margin-top: 6em;
+    }
+
+    .footer-logo img {
+        height: 50px;
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .subscribe-form {
+        max-width: 450px;
+        margin-bottom: 40px;
+    }
+
+    .subscribe-input {
+        flex: 1;
+        padding: 12px 20px;
+    }
+
+    .subscribe-btn {
+        padding: 12px 35px;
+    }
+
+    .footer-title {
+        margin-bottom: 25px;
+    }
+
+    .footer-links li {
+        margin-bottom: 12px;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icon {
+        width: 3.2em;
+        height: 3.2em;
+    }
+
+    .social-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-bottom {
+        padding: 2em 0;
+        margin-top: 2em;
+    }
+
+    .scroll-top-btn {
+        width: 50px;
+        height: 50px;
+        bottom: 30px;
+        right: 30px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+    .footer-section {
+        padding: 3em 0 0 0;
+        margin-top: 7em;
+    }
+
+    .footer-logo img {
+        height: 55px;
+        max-width: 220px;
+        margin-bottom: 25px;
+    }
+
+    .subscribe-form {
+        max-width: 500px;
+        margin-bottom: 45px;
+    }
+
+    .subscribe-input {
+        padding: 14px 22px;
+    }
+
+    .subscribe-btn {
+        padding: 14px 40px;
+    }
+
+    .footer-title {
+        margin-bottom: 28px;
+    }
+
+    .footer-links li {
+        margin-bottom: 14px;
+    }
+
+    .social-icons {
+        gap: 18px;
+    }
+
+    .social-icon {
+        width: 4.2em;
+        height: 4.2em;
+    }
+
+    .social-icon svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    .footer-bottom {
+        margin-top: 2.5em;
+    }
+
+    .scroll-top-btn {
+        width: 55px;
+        height: 55px;
+        bottom: 35px;
+        right: 35px;
+        font-size: 1.3rem;
+    }
+}
