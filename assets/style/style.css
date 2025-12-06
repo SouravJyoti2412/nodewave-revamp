@@ -65,39 +65,12 @@ svg {
     vertical-align: middle;
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
 button:focus:not(:focus-visible) {
     outline: 0;
 }
 
-/* Bootstrap Grid System - Only Used Classes */
-.row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-0.5 * var(--bs-gutter-x));
-    margin-left: calc(-0.5 * var(--bs-gutter-x));
-}
-
-.row > * {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * 0.5);
-    padding-left: calc(var(--bs-gutter-x) * 0.5);
-    margin-top: var(--bs-gutter-y);
-}
-
-/* Custom Navigation Styles */
+/* Content section wrapper */
 .content-section {
-    /* Content section wrapper */
-    /* position: relative; */
     max-width: 1600px;
     margin: 0 auto;
     background-color: #0d0404;
