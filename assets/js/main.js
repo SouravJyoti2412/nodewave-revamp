@@ -16,6 +16,11 @@ function drawGraph() {
     const canvas = document.getElementById("arcGraph");
     const container = document.querySelector(".graph-container");
 
+    // Exit early if canvas doesn't exist
+    if (!canvas || !container) {
+        return;
+    }
+
     // Set canvas resolution to container size
     canvas.width = container.offsetWidth;
     canvas.height = container.offsetHeight;
