@@ -1,6 +1,9 @@
 // Main JS placeholder
 document.addEventListener('DOMContentLoaded', function () {
     console.log('Main JS loaded');
+
+    // Initialize Swiper after DOM is ready and Swiper library is loaded
+    initializeSwiper();
 });
 
 
@@ -90,3 +93,34 @@ function renderTokenomicsList(data) {
 
 
 renderTokenomicsList(tokenomicsData);
+
+
+// Latest News & Articles start
+
+function initializeSwiper(retryCount = 0) {
+    // Wait for Swiper to be available (it's loaded from CDN after this script)
+    if (typeof window.Swiper !== 'undefined') {
+        // @ts-ignore - Swiper is loaded from CDN
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,   // Mobile slider
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            // Responsive breakpoints
+            breakpoints: {
+                640: { slidesPerView: 2 },  // Small screens
+                768: { slidesPerView: 3 },  // Tablet → 3 cards
+                992: { slidesPerView: 4 },  // Desktop → 4 cards
+            },
+        });
+    } else if (retryCount < 50) {
+        // If Swiper isn't loaded yet, wait a bit and try again (max 50 retries = 5 seconds)
+        setTimeout(function () { initializeSwiper(retryCount + 1); }, 100);
+    } else {
+        console.warn('Swiper library failed to load');
+    }
+}
+// Latest News & Articles end
